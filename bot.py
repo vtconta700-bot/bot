@@ -34,5 +34,10 @@ app.add_handler(CommandHandler("ajuda", ajuda))
 
 if __name__ == "__main__":
     threading.Thread(target=run_web, daemon=True).start()
-    print("Bot online!")
-    app.run_polling()
+    print("BOT INICIANDO...", flush=True)
+
+    app.run_polling(
+        drop_pending_updates=True
+    )
+
+    print("BOT PAROU!", flush=True)
