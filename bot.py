@@ -5,7 +5,7 @@ import uvicorn
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-TOKEN = os.environ["BOT_TOKEN"].strip()
+TOKEN = os.environ["8810170285:AAFnsN9tFWHtz3_37Lap1W4i4NkLb_jlzRM"].strip()
 PORT = int(os.environ.get("PORT", "10000"))
 
 web = FastAPI()
